@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+	    <!-- Load the latest version of TensorFlow.js -->
+		<script src="https://unpkg.com/@tensorflow/tfjs"></script>
+		<script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+		<script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+		<title>Deep Transfer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<h1>Deep Transfer</h1>
+							<h2>AI Object Prediction</h2>
+							<span class="avatar"><video autoplay playsinline muted id="webcam" width="224" height="224"></video></span>
+							<p>Use transfer learning to store webcam image to button for prediction</p> 
+							<div id="console"></div>
+						</header>
+
+						<footer>
+							    <button id="class-a">Add A</button>
+    							<button id="class-b">Add B</button>
+    							<button id="class-c">Add C</button>
+							<p></p>
+							<p>Tap button multiple times for better prediction accuracy</p>
+						</footer>
+					</section>
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; fwrd thinking</li><li><a href="http://fwrd.ai">fwrd.ai</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+			<script src="index.js"></script>
+	</body>
+</html>
